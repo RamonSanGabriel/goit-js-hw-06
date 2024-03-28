@@ -14,13 +14,17 @@ const images = [
 ];
 
 const ul = document.querySelector(".gallery");
-ul.style.backgroundColor = "red";
-// ul.style.flex = "flex-shrink";
+ul.style.backgroundColor = "tomato";
+ul.style.color = "white";
+ul.style.border = "3px  dotted aqua";
 
 for (let image of images) {
   let li = document.createElement("li");
-  li.innerHTML = `<img src="${image.url}" alt = "${image.alt}" >`;
+  li.innerHTML = `<img src="${image.url}" alt = "${image.alt}" width = '300px'>`;
   ul.appendChild(li);
-  ul.insertAdjacentHTML("afterend", "<strong>dcode</strong>");
+  li.insertAdjacentHTML("afterend", "<strong>Homework 3</strong>");
+
+// li.style.border = "2px  solid aqua";
+
 }
 // console.log(images);
