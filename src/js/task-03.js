@@ -23,8 +23,4 @@ for (let image of images) {
   li.innerHTML = `<img src="${image.url}" alt = "${image.alt}" width = '300px'>`;
   ul.appendChild(li);
   li.insertAdjacentHTML("afterend", "<strong>Homework 3</strong>");
-
-// li.style.border = "2px  solid aqua";
-
 }
-// console.log(images);
