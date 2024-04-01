@@ -5,7 +5,7 @@ form.addEventListener("submit", (e) => {
 
   const email = document.querySelector("[name=email]").value;
   const password = document.querySelector("[name=password]").value;
-
+  console.log(email, password);
   const user = {
     email: "ramon123@yahoo.com",
     password: "pass123",
